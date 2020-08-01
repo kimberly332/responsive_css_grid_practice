@@ -1,0 +1,141 @@
+/* DEFAULTS - Mobile @ 375px */
+.hidden {
+	display: none;
+}
+
+body {
+	color: white;
+	font-size: 100%;
+	font-family: arial, helvetica, sans-serif;
+}
+
+h2 { padding: 0.5em; font-size: 2em; margin-top: 1em; }
+
+#grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 2fr 4fr 4fr 4fr 4fr;
+}
+
+.site-navigator {
+	background-color: #FD93BB;
+	color: white;
+	padding: 2em;
+	grid-column: 1/5;
+}
+
+.heading {
+	background-color: #FED866;
+	padding: 2em;
+	grid-column: 1/5;
+}
+
+.breadcrumb {
+	font-size: 12px;
+	padding: 10px 12px;
+	color: white;
+	background-color: #333;
+	border-radius: 8px;
+}
+
+.main-content1 {
+	background-color: #51C6D6;
+	color: white;
+	padding: 2em;
+	grid-column: 1/3;
+}
+
+.main-content2 {
+	background-color: #F0845F;
+	color: white;
+	padding: 2em;
+	grid-column: 3/5;
+}
+
+.main-content3 {
+	background-color: #F0845F;
+	color: white;
+	padding: 2em;
+	grid-column: 1/3;
+
+}
+
+.main-content4 {
+	background-color: #51C6D6;
+	color: white;
+	padding: 2em;
+	grid-column: 3/5;
+}
+
+.message-box {
+	background-color: #6BBBB8;
+	color: white;
+	padding: 2em;
+	grid-column: 1/5;
+}
+
+.contact-form {
+	background-color: #E6202C;
+	color: white;
+	padding: 2em;
+	grid-column: 1/5;
+}
+
+.map {
+	background-color: #FD93BB;
+	color: white;
+	padding: 2em;
+	grid-column: 1/5;
+}
+
+footer {
+	background-color: #FED866;
+	color: white;
+	padding: 2em;
+	grid-column: 1/5;
+}
+
+
+/* breakpoint - > this is tablet @ landscape 1024px */
+@media screen and (min-width: 64em) {
+  #grid-container {
+    grid-template-rows: 2fr 10fr 4fr 12fr 7fr 7fr;
+
+  }
+
+  .main-content1 {
+  	background-color: #51C6D6;
+  	grid-column: 1/2;
+  }
+
+  .main-content2 {
+  	background-color: #F0845F;
+  	grid-column: 2/3;
+  }
+
+  .main-content3 {
+  	background-color: #51C6D6;
+  	grid-column: 3/4;
+  }
+
+  .main-content4 {
+  	background-color: #F0845F;
+  	grid-column: 4/5;
+  }
+
+  .message-box {
+	grid-column: 1/3;
+  }
+
+  .contact-form {
+	grid-column: 3/5;
+  }
+
+  .map {
+	grid-column: 1/5;
+  }
+
+  footer {
+ 	grid-column: 1/5;
+  }
+}
